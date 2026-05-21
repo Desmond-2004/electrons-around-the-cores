@@ -15,7 +15,18 @@ function calculateElectrons(dice) {
             throw new Error("Dice faces must be under 7");
         }
     }
-    return 6;
+
+    let electrons = 0;
+
+    for (let i = 0; i < dice.length; i++) {
+        if (dice[i] === 3) {
+            electrons += 2;
+        } else if (dice[i] === 5) {
+            electrons += 4;
+        }
+    }
+
+    return electrons;
 }
 
 module.exports = calculateElectrons;
