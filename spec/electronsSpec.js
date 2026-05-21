@@ -21,11 +21,8 @@ describe("Electron Calculator", function () {
         }).toThrowError("Dice faces must be under 7");
     });
 
-    it("[ 1, 2, 3, 4, 5 ] -> 6", function () {
-        expect(function () {
-            calculateElectrons([1, 2, 3, 4, 5]);
-        }).toEqual(6);
+    it("[1, 2, 3, 4, 5] -> 6", function () {
+        expect(calculateElectrons([1, 2, 3, 4, 5])).toEqual(6);
     });
 
 });
-

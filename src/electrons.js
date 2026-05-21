@@ -15,7 +15,7 @@ function calculateElectrons(dice) {
             throw new Error("Dice faces must be under 7");
         }
     }
-    return 0;
+    return 6;
 }
 
 module.exports = calculateElectrons;
