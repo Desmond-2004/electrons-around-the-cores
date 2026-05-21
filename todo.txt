@@ -1,4 +1,4 @@
 (X) recognise arrays of 4-6 ints [done]
-(X) reject faces outside 1-6
+(X) reject faces outside 1-6 [done]
 (X) [ 1, 2, 3, 4, 5 ] -> 6
 (X) [ 2, 2, 3, 3 ] -> 4
