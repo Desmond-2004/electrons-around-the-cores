@@ -26,7 +26,15 @@ describe("Electron Calculator", function () {
     });
 
     it("[[ 2, 2, 3, 3 ] -> 4", function () { 
-        expect(calculateElectrons([2,2,3,3])).toEqual(4);
+        expect(calculateElectrons([2 ,2 ,3 ,3])).toEqual(4);
+    });
+
+    it("[[ 6, 6, 4, 4, 1, 3 ] -> 2", function () {
+        expect(calculateElectrons([ 6, 6, 4, 4, 1, 3 ])).toEqual(2);
+    });
+
+    it("[[ 3, 5, 3, 5, 4, 2 ] -> 12", function () {
+        expect(calculateElectrons([ 3, 5, 3, 5, 4, 2 ])).toEqual(12);
     });
 
 });
